@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <title>ciel</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script src="http://localhost:35729/livereload.js?snipver=1"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/unpoly@3.5.2/unpoly.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/unpoly@3.5.2/unpoly.min.css">
+  <script src="https://unpkg.com/alpinejs" defer></script>
+  <script src="ciel.js"></script>
+  <script type="module">
+    import "./my-posts.js";
+    import "./my-nav.js";
+    import "./my-form.js";
+    up.link.config.followSelectors.push('a[href]');
+  </script>
+  <style>
+    my-posts li {
+      font-size: 1.3rem;
+    }
+    my-nav li {
+      font-size: 1.5rem;
+      list-style: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+    <h1>Ciel.js</h1>
+    <article class="animate__animated animate__headShake">
+      <h3>my-posts.js</h3>
+      <my-posts posts="[{'title':'Ciel(C-EL) means Custom Elements.'}, {'title':'It is just custom tag with attributes.'}, {'title':'Great for use with Alpine, Unpoly and template engines.'}]"></my-posts>
+    </article>
+    <article class="animate__animated animate__headShake animate__delay-1s">
+      <h3>my-nav.js</h3>
+      <my-nav class="grid" menus="[{'text':'Menu 1','link':'/link'}, {'text':'Menu 2','link':'/link'}, {'text':'Menu 3','link':'/link'}]"></my-nav>
+    </article>
+    <article class="animate__animated animate__headShake animate__delay-2s">
+      <h3>my-form.js</h3>
+      <my-form class="grid" name="JaeHyeon" phone="012-3456-7890" email="email@company.com"></my-form>
+    </article>
+  </main>
+
+</body>
+</html>
